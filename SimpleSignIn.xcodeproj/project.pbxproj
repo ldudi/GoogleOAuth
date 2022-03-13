@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09681C62A599F5F9CB101F2E /* Pods_SimpleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F91D531D3653EC4B94AC4D5 /* Pods_SimpleSignIn.framework */; };
 		29CA665027DE4D1D007B7E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA664F27DE4D1D007B7E95 /* AppDelegate.swift */; };
 		29CA665227DE4D1D007B7E95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA665127DE4D1D007B7E95 /* SceneDelegate.swift */; };
 		29CA665427DE4D1D007B7E95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA665327DE4D1D007B7E95 /* ViewController.swift */; };
 		29CA665727DE4D1D007B7E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CA665527DE4D1D007B7E95 /* Main.storyboard */; };
 		29CA665927DE4D1F007B7E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CA665827DE4D1F007B7E95 /* Assets.xcassets */; };
 		29CA665C27DE4D1F007B7E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CA665A27DE4D1F007B7E95 /* LaunchScreen.storyboard */; };
+		29E8D71D27DE59FF00BB1AB8 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8D71C27DE59FF00BB1AB8 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		29CA665827DE4D1F007B7E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CA665B27DE4D1F007B7E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CA665D27DE4D1F007B7E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E8D71C27DE59FF00BB1AB8 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		7F91D531D3653EC4B94AC4D5 /* Pods_SimpleSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92AF088B2248B04C461BCAC8 /* Pods-SimpleSignIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSignIn.release.xcconfig"; path = "Target Support Files/Pods-SimpleSignIn/Pods-SimpleSignIn.release.xcconfig"; sourceTree = "<group>"; };
+		9D0C8B5D4CF0C53719667E7F /* Pods-SimpleSignIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSignIn.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSignIn/Pods-SimpleSignIn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09681C62A599F5F9CB101F2E /* Pods_SimpleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				29CA664E27DE4D1D007B7E95 /* SimpleSignIn */,
 				29CA664D27DE4D1D007B7E95 /* Products */,
+				B105A62AE07B821F0A41C720 /* Pods */,
+				FD875C321BB4183604392C0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				29CA665827DE4D1F007B7E95 /* Assets.xcassets */,
 				29CA665A27DE4D1F007B7E95 /* LaunchScreen.storyboard */,
 				29CA665D27DE4D1F007B7E95 /* Info.plist */,
+				29E8D71C27DE59FF00BB1AB8 /* LogInViewController.swift */,
 			);
 			path = SimpleSignIn;
+			sourceTree = "<group>";
+		};
+		B105A62AE07B821F0A41C720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D0C8B5D4CF0C53719667E7F /* Pods-SimpleSignIn.debug.xcconfig */,
+				92AF088B2248B04C461BCAC8 /* Pods-SimpleSignIn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD875C321BB4183604392C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F91D531D3653EC4B94AC4D5 /* Pods_SimpleSignIn.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29CA666027DE4D1F007B7E95 /* Build configuration list for PBXNativeTarget "SimpleSignIn" */;
 			buildPhases = (
+				58F986384CC94547CD464BCE /* [CP] Check Pods Manifest.lock */,
 				29CA664827DE4D1D007B7E95 /* Sources */,
 				29CA664927DE4D1D007B7E95 /* Frameworks */,
 				29CA664A27DE4D1D007B7E95 /* Resources */,
+				74B6FF3C6CB27874D5D48635 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58F986384CC94547CD464BCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleSignIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B6FF3C6CB27874D5D48635 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSignIn/Pods-SimpleSignIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSignIn/Pods-SimpleSignIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleSignIn/Pods-SimpleSignIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		29CA664827DE4D1D007B7E95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E8D71D27DE59FF00BB1AB8 /* LogInViewController.swift in Sources */,
 				29CA665427DE4D1D007B7E95 /* ViewController.swift in Sources */,
 				29CA665027DE4D1D007B7E95 /* AppDelegate.swift in Sources */,
 				29CA665227DE4D1D007B7E95 /* SceneDelegate.swift in Sources */,
@@ -284,6 +356,7 @@
 		};
 		29CA666127DE4D1F007B7E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0C8B5D4CF0C53719667E7F /* Pods-SimpleSignIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		29CA666227DE4D1F007B7E95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92AF088B2248B04C461BCAC8 /* Pods-SimpleSignIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
